@@ -1,0 +1,258 @@
+#root {
+  display: block;
+  margin: 0 auto;
+  padding: 2rem;
+}
+/* ======= HEADER ======= */
+/* === ХЕДЕР === */
+.top-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: white;
+}
+
+.header-inner {
+    max-width: 1920px;
+    margin: 0 auto; /* центрируем контент, но блок шириной 100% остается */
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 32px;
+}
+
+
+/* Левый блок */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1; /* занимает пространство слева, но не больше нужного */
+}
+
+/* Центральный блок */
+.header-center {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  flex: 0 1 auto; /* не растягивается, центрируется по доступному месту */
+}
+
+/* Правый блок */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex: 1;
+  justify-content: flex-end; /* прижимает элементы к правому краю */
+}
+.headerlogo{
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+  margin-bottom: 1px;
+}
+.lefttext{
+  width: 100px;
+  line-height: 13px;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  color: #000;
+
+}
+
+.header-text{
+   vertical-align: middle;
+  font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+      margin-top: 2px;
+}
+
+
+.header-right a{
+  color: #626262;
+}
+.header-right a:hover{
+  color: #000;
+}
+
+.header-link{
+  font-size: 14px;
+}
+.create-btn{
+  border-radius: 15px;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    color: #fff;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* App.css */
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 220px; /* отступ от хедера */
+} 
+.container {
+  max-width: 1400px;
+  width: 800px;
+  text-align: center;
+}
+
+.title {
+  color: #000;
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.search-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.inputtext{
+  flex: 1;
+  padding: 20px 15px;
+  border-radius: 15px;
+  border: 1px solid #D1D1D6;
+  box-shadow: 0 0 60px 10px rgba(214, 118, 255, 0.3);
+}
+.inputtext::placeholder{
+  color: #D1D1D6;
+}
+input:focus{
+  outline: none;                /* убирает стандартную рамку браузера */
+  border-color: #ae00ff; 
+}
+.uploadform{
+  display: inline-flex;            /* выравнивает иконку и текст по центру */
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 16px;
+  border: 1px solid #D1D1D6;
+  border-radius: 15px;
+  cursor: pointer;
+  width: auto;                     /* ← не растягивается на 100% */
+  max-width: 250px;                /* ← ограничение длины, можешь поменять */
+  white-space: nowrap;             /* чтобы текст не переносился */
+  overflow: hidden;                /* скрывает лишний текст */
+  text-overflow: ellipsis;  
+  box-shadow: 0 0 60px 10px rgba(214, 118, 255, 0.3); 
+}
+.uploadform:focus{
+  outline: none;                /* убирает стандартную рамку браузера */
+  border-color: #ae00ff; 
+}
+
+
+.search-bar button {
+  border: 1px solid #D1D1D6;
+  color: #fff;
+  padding: 18px 18px;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.search-bar:focus{
+  outline: none;                /* убирает стандартную рамку браузера */
+  border-color: #007AFF; 
+}
+.button1 {
+  background-color: #000;
+  color: #fff;
+  padding: 18px 28px;
+  border-radius: 18px;
+  cursor: pointer;
+  box-shadow: 0 0 60px 10px rgba(214, 118, 255, 0.3);
+}
+
+.search-bar input::placeholder{
+  font-size: 15px;
+}
+
+.error {
+  color: crimson;
+  margin-bottom: 12px;
+}
+
+.parts-grid {
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+  margin-bottom: 60px;
+}
+
+.part-card {
+  border: 1px solid #D1D1D6;
+  border-radius: 15px;
+  padding: 12px;
+  background: #fff;
+}
+
+.part-card button,
+.part-card a {
+  padding: 12px 18px;
+  border-radius: 16px;
+  background: #000000;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 6px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+.results-title{
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.placeholder-text{
+
+    font-size: 12px;
+    width: 700px;
+    color: #D1D1D6;
+    line-height: 13px;
+    margin-top: 30px;
+}
+
+.placeh{
+  justify-content: center;
+  display: flex;
+  color: #D1D1D6;
+}
+
+
+
